@@ -15,18 +15,22 @@
 		 		$text="";
 	 		}
 		}
-				$temp=false;
-				$query=$query = $baglanti->query("SELECT * FROM survey where userId=".$id."", PDO::FETCH_ASSOC);
+				$temp=0;
+				if(isset($_COOKIE['user'])){
+				$userid=$_COOKIE['user'];
+				
+				$query=$query = $baglanti->query("SELECT * FROM survey where userId=".$userid."", PDO::FETCH_ASSOC);
 			if ( $query->rowCount() )
 		{
      		foreach( $query as $row)
 			{	
 				if($fid==$row['filmId']){
-					$temp=true;
+					$temp=1;
 				}
 
 	 		}
 		}
+				}
 				
 	
 	$butonactive="<center> <a href=\"../anket/anket.php?fid=". $fid ."\"><button class=\"button\" style=\"vertical-align:middle\"><span>OY VER </span></button></a></center>	</div>
@@ -34,8 +38,9 @@
 	$butonpassive="<center> <a href=\"#\"><button class=\"button\" style=\"vertical-align:middle\"><span>OY VER </span></button></a></center>	</div>
 	<br>";
 				
-			if($temp==true){
+			if($temp==1){
 			echo $butonpassive;
+			$temp=0;
 			}
 			else{
 			echo $butonactive;
