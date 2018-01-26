@@ -1,0 +1,128 @@
+/* CSS Document */
+.resim img{
+	width: 100%;
+	border-radius: 5px;
+	height: 200px;
+}
+
+.resim p{
+	width: 70%;
+	height: 50px;
+	text-align: center;
+	margin: 5%;
+}
+.resim{
+	border: #333333 3px solid;
+	margin: 3%;
+	padding: 1%;
+	background-color: #242424;
+	color:#fff;
+	border-radius: 6px;
+}
+.resim img{
+	widows:50%;
+}
+.satir{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+body{
+	background-color: #c1c1c1;
+	color:#000;
+}
+.main img{
+	height:400px;
+}
+.main p{
+	width: 75%;
+}
+.main{
+	background-color: #c1c1c1;
+}
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	float: left;
+	color: #000;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #f4511e;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	float:left;
+	margin-left: 10px;
+	font-size: 1.2em;
+}
+.sel {
+  font-size: 1.1em;
+  display: inline-block;
+  /*margin: 2em 0.5em;*/
+  width: 15%;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.text-center{
+	color: #121212;
+}
